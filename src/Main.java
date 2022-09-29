@@ -1,0 +1,23 @@
+import lopFan.Fan;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Thông số quạt sau khi gán ");
+        Fan fan1 = new Fan();
+        Fan fan2 = new Fan();
+        System.out.println("quạt Fan1 khi thay là\n");
+//        System.out.println(fan1.toString());
+        fan1.setSpeed(3);// gán giá trị speed cho fan1
+        fan1.setRadius(10);
+        fan1.setColor("yellow");
+        fan1.setOn(true);
+        System.out.println(fan1.toString());
+
+//
+        System.out.println("\n");
+        fan2.setSpeed(2);
+        fan2.setRadius(5);
+        fan2.setOn(false);
+        System.out.println("Fan 2 sau khi thay là: \n"+ fan2.toString());
+    }
+}
